@@ -4,14 +4,7 @@ import { BookOpen } from 'lucide-react';
 export const Header: React.FC = () => {
   return (
     <header className="bg-slate-900 text-white pt-16 pb-24 px-6 md:px-12 rounded-b-[3rem] shadow-xl relative overflow-hidden">
-      <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
-        <svg width="100%" height="100%">
-          <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" strokeWidth="1"/>
-          </pattern>
-          <rect width="100%" height="100%" fill="url(#grid)" />
-        </svg>
-      </div>
+      {/* Removed the absolute div containing the SVG for gridlines */}
       
       <div className="max-w-5xl mx-auto relative z-10 text-center md:text-left">
         <div className="inline-flex items-center gap-2 bg-blue-900/50 px-4 py-1.5 rounded-full border border-blue-700/50 mb-6 backdrop-blur-sm">
